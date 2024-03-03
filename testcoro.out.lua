@@ -1,0 +1,29 @@
+local _0 = (_ENV or getfenv())
+_0['abc'] = function(...)
+  local _0 = (_ENV or getfenv())
+  local _1 = _0['coroutine']
+  local _2 = _1['resume']
+  local _3 = _0['coroutine']
+  local _4 = _3['yield']
+  local _5 = _4(nil)
+  local _6 = _2(nil)
+end
+_0['abc2'] = function(...)
+  local _0 = (_ENV or getfenv())
+  local _1 = _0['print']
+  local _2 = _1(nil)
+end
+local _1 = _0['coroutine']
+local _2 = _1['create']
+local _3 = _0['abc2']
+local _4 = _2(_3)
+local _5 = _0['coroutine']
+local _6 = _5['create']
+local _7 = _0['abc']
+local _8 = _6(_7)
+local _9 = _0['coroutine']
+local _10 = _9['resume']
+local _11 = _10(_8)
+local _12 = _0['coroutine']
+local _13 = _12['resume']
+local _14 = _13(_8)
